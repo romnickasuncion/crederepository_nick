@@ -1,0 +1,1338 @@
+@charset "Shift_JIS";
+
+
+/* 基本設定
+ ******************************************************************************************** */
+html {}
+body { width: calc(100% - 200px);margin:0px; padding:0px; border:0px; color:#333333; line-height:1.2em; font-family:'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro',sans-serif;}
+div,img,h1,h2,h3,h4,h5,h6,p,form,pre { margin:0px; padding:0px; border:0px; /*display:block;*/ font-size:100%; }
+ul,li,ol,dl,dt,dd { margin:0px; padding:0px; list-style:none; list-style-image:none; }
+input,select { line-height:1em; }
+fieldset { border:none; margin:0px; padding:0px; }
+hr,legend { display:none; }
+span { font-size:100%; }
+pre {}
+img { vertical-align:bottom; }
+
+a { color:#082f45; text-decoration:underline; font-size:100%; overflow:hidden; outline:none; }
+a:hover { color:#09F; text-decoration:none;  }
+a img {}
+
+em { font-style:normal; font-weight:bold; }
+.Notes { color:#CC0000; }
+
+/* レイアウト設定
+ ******************************************************************************************** */
+/*body{ background:url(/common/img/bg_contents.gif) repeat left top;}*/
+body{ url(/user/mypage/img/bg_contents.gif) repeat left top; margin-top:0; padding:0;}
+div#wrap { text-align:left;padding:0; width:1124px; background-color:#FFF; padding-bottom:10px;}
+div#wrapper { padding:0; width:1012px; }
+div#header { height:78px; overflow:hidden; position:relative; padding-left:130px;}
+div#navigation {}
+div#main { width:1012px; margin-bottom:50px;}
+div#footer-navi {margin-bottom:56px;}
+div#footer {padding-top:40px; font-size:16px;}
+
+
+/* ヘッダー
+ ******************************************************************************************** */
+div#header div#ci { margin: 10px 0; width: 1100px; }
+div#header div#ci p img { height:60px; width:60px; margin:0 13px 0 0;}
+div#header div#ci p { display: inline-block; *display: inline; zoom:1; width:70px;vertical-align: top; margin: 0; color:#666666; font-size:68%; line-height: 1.6em; }
+div#header div#ci p a { text-decoration:none; color:#666666; }
+div#header div#ci ul { width:330px; position:absolute; top:0; left:518px; padding-top:15px; }
+div#header div#ci li { display:inline; background:url(/user/mypage/img/arrow_gray.gif) no-repeat left center; padding-left:10px; font-size:72%; margin-right:10px; }
+div#header #banner { width:165px; position:absolute; top:0px; right:0px;}
+div#header div#ci p.sitedescript{ width:auto;font-size:15px;}
+
+
+/* グローバルナビ
+ ******************************************************************************************** */
+div#navigation ul { height:50px; list-style:none;margin-bottom:20px; }
+div#navigation ul li { display:inline;}
+div#navigation ul li a{ margin-right:5px; }
+div#navigation ul li.last a{ margin-right:0; }
+
+
+/* パンくず
+ ******************************************************************************************** */
+div#breadcrumbs { width:1012px; margin:0 0 15px 0; padding:0;font-size:72%; }
+div#breadcrumbs a {}
+
+
+/* ページトップへ
+ ******************************************************************************************** */
+div.pagetop { text-align:right; padding-bottom:12px;}
+div.pagetop a{ font-size:72%; padding-left:10px; background:url(/user/mypage/img/arrow_up.gif) no-repeat left center;}
+
+
+/* フッターナビ
+ ******************************************************************************************** */
+div#footer-navi a { text-decoration:none; color:#333;}
+div#footer-navi a:hover { color:#09F; text-decoration:none; }
+div#footer-navi .link-area{ width:757px; float:left; border:#CCC solid 1px;/*  background:url(/common/img/bg_footer_link.gif) repeat-y left top; */}
+div#footer-navi .link-area .set{ min-height:140px; width:163px; float:left; display:inline; padding:14px 12px 0 13px; border-right: 1px dotted #ccc; }
+div#footer-navi .link-area .set .title{ font-size:84%; font-weight:bold; padding-bottom:12px; border-bottom:#CCC solid 1px;}
+div#footer-navi .link-area .last{ background:none; border-right:none;}
+div#footer-navi .link-area .set ul{ margin-top:12px;}
+div#footer-navi .link-area .set li { font-size:75%; margin-bottom:5px; padding-left:10px; background:url(/user/mypage/img/arrow_gray.gif) no-repeat left center;}
+
+div#footer-navi .pr-area{ min-height:150px; width:247px; float:right; border:#C4E774 solid 3px; background:#F3F8DD;}
+div#footer-navi .pr-area .text{ font-size:75%; font-weight:bold; margin:20px 0 15px 34px;}
+div#footer-navi .pr-area .link{ text-align:center; margin-bottom:20px;}
+
+
+/* フッター
+ ******************************************************************************************** */
+div#footer a { text-decoration:none; color:#333;}
+div#footer a:hover { color:#09F; text-decoration:none;  }
+
+div#footer li { display:inline; font-size:72%;}
+div#footer ul.link { margin-bottom:25px; text-align:center; }
+div#footer ul.link li { padding-left:8px; margin-right:8px; border-left: #666 solid 1px;}
+div#footer ul.link li.title{ border:none;}
+	
+div#footer .footerci { text-align:center;}
+div#footer ul li{ padding-left:15px; margin-right:15px; border-left: #666 solid 1px;}
+div#footer ul li.copyright{ border:none; color:#999;}
+
+
+/* ボックスリンク共通
+ ******************************************************************************************** */
+div.boxlink a{ display:block; width:182px; height:50px; margin-bottom:5px; text-align:center; border:#999 solid 1px; padding: 5px 0;}
+div.boxlink img{ padding-top:8px;}
+
+
+/* バナー共通
+ ******************************************************************************************** */
+.banner{ margin-bottom:12px;}
+.banner-end{ padding-bottom:12px; margin-bottom:12px; border-bottom:#CCC solid 1px;}
+
+
+/* 右寄せテキスト共通
+ ******************************************************************************************** */
+.right-link{ text-align:right; font-size:81%; margin:10px 0 40px 0;clear:both; }
+.right-link a{ background:url(/common/img/arrow_gray.gif) no-repeat left 3px; padding-left:8px;}
+.right-note{ text-align:right; font-size:71% !important; margin-top:10px;}
+
+/* アイコン
+ ******************************************************************************************** */
+.arrow-gray{ background:url(/common/img/arrow_gray.gif) no-repeat left 5px; padding-left:12px;}
+.arrow-inline{ background:url(/common/img/arrow_inline.gif) no-repeat left 5px; padding-left:12px;}
+.arrow-blue{ background:url(/common/img/arrow_blue.gif) no-repeat left 5px; padding-left:12px;}
+.otherlink{ background:url(/common/img/icon_otherwin.gif) no-repeat left center; padding-left:16px;}
+
+/* リスト共通
+ ******************************************************************************************** */
+ul.useful{ line-height: 1.5em; margin-bottom:15px; margin-top:10px;}
+ul.useful li{ font-size:75%; background:url(/common/img/arrow_gray.gif) no-repeat left 5px; padding-left:8px; }
+
+/* FLOAT CONFIG
+ ******************************************************************************************** */
+.clear { clear:both; }
+.center { text-align: center; }
+.center img { display:inline; }
+
+
+/* COLOR CONFIG
+ ******************************************************************************************** */
+.color-search{ color:#FF9900;}
+.color-service{ color:#FF5757;}
+.color-contents{ color:#2EC2C4;}
+.color-company{ color:#CC9900;}
+
+
+/* CLEARFIX CONFIG
+ ******************************************************************************************** */
+dl:after,
+.clrfix:after,
+#wrap:after,
+#wrapper:after,
+#header:after,
+#main:after,
+body#top #main-area:after,
+#sitenv:after,
+#footer:after,
+#footer-navi:after,
+.search-area .search:after,
+#map:after,
+#two-column:after,
+body#search .keyword:after,
+body#top #main-area .search-area .feature .title:after,
+body#top #main-area .contents-area:after,
+body#top #main-area .contents-area .menu:after,
+.offer-feature .title:after,
+body#search .job-area .menu:after,
+body#search .brand .row:after,
+body#search .job-area .right:after,
+body#search .result:after,
+body#search .result .set .title:after,
+body#search .result .policy:after,
+body#search .detail .title:after,
+body#search .detail .entry:after,
+body#contents .top-list:after,
+body#contents .top-list .menu:after,
+body#contents .top-useful .menu:after,
+body#contents #list .block:after,
+body#contents #list .page:after,
+body#contents .detail .company:after,
+body#service .top-useful .menu:after,
+body#company .top-useful .menu:after,
+body#client .top-useful .menu:after,
+body#contact .top-useful .menu:after,
+.set:after,
+.last:after{
+	content:".";
+	display:block;
+	height:0px;
+	clear:both;
+	visibility:hidden;
+}
+
+
+dl,
+.clrfix,
+#wrap,
+#wrapper,
+#header,
+#main,
+body#top #main-area,
+#footer,
+#footer-navi,
+body#top #main-area .search-area .search,
+body#top #main-area .contents-area,
+#map,
+#two-column,
+body#search .keyword,
+body#top #main-area .search-area .feature .title,
+body#top #main-area .contents-area .menu,
+.offer-feature .title,
+body#search .job-area .menu,
+body#search .brand .row,
+body#search .job-area .righ,
+body#search .result,
+body#search .result .set .title,
+body#search .result .policy,
+body#search .detail .title,
+body#search .detail .entry,
+body#contents .top-list,
+body#contents .top-list .menu,
+body#contents .top-useful .menu,
+body#contents #list .block,
+body#contents #list .page,
+body#contents .detail .company,
+body#service .top-useful .menu,
+body#client .top-useful .menu,
+body#company .top-useful .menu,
+
+.set,
+.last{
+	display:inline-table;
+	min-height:1%;
+}
+
+
+* html dl,
+* html .clrfix,
+* html #wrap,
+* html #wrapper,
+* html #header,
+* html #main,
+* html body#top #main-area,
+* html #sitenv,
+* html #btmnv,
+* html #footer,
+* html #footer-navi,
+* html body#top #main-area .search-area .search,
+* html body#top #main-area .contents-area,
+* html #map,
+* html #two-column,
+* html body#search .keyword,
+* html body#top #main-area .search-area .feature .title,
+* html body#top #main-area .contents-area .menu,
+* html .offer-feature .title,
+* html body#search .job-area .menu,
+* html body#search .brand .row,
+* html body#search .job-area .righ,
+* html body#search .result,
+* html body#search .result .set .title,
+* html body#search .result .policy,
+* html body#search .detail .title,
+* html body#search .detail .entry,
+* html body#contents .top-list,
+* html body#contents .top-list .menu,
+* html body#contents .top-useful .menu,
+* html body#contents #list .block,
+* html body#contents #list .page,
+* html body#contents .detail .company,
+* html body#service .top-useful .menu,
+* html body#client .top-useful .menu,
+* html body#company .top-useful .menu,
+* html .set,
+* html .last
+{ height:1px;}
+
+
+dl,
+.clrfix,
+#wrap,
+#wrapper,
+#header,
+#main,
+body#top #main-area,
+#sitenv,
+#footer,
+body#top #main-area .search-area .search,
+body#top #main-area .contents-area,
+#map,
+#two-column,
+body#search .keyword,
+body#top #main-area .search-area .feature .title,
+body#top #main-area .contents-area .menu,
+.offer-feature .title,
+body#search .job-area .menu,
+body#search .brand .row,
+body#search .job-area .righ,
+body#search .result,
+body#search .result .set .title,
+body#search .result .policy,
+body#search .detail .title,
+body#search .detail .entry,
+body#contents .top-list,
+body#contents .top-list .menu,
+body#contents .top-useful .menu,
+body#contents #list .block,
+body#contents #list .page,
+body#contents .detail .company,
+body#service .top-useful .menu,
+body#client .top-useful .menu,
+body#company .top-useful .menu,
+.set,
+.last
+{ display:block;}
+
+
+/* ======================
+ TOPページ
+========================= */
+/* TOP h1 */
+div#header div#ci h1#sitedescript { font-weight:normal; font-size:68%; width:420px; position:absolute; top:10px; left:69px; color:#666666; line-height: 1.6em; }
+
+/* TOPメイン画像 */
+div#eyecatch{ width:1012px;}
+div#eyecatch .menu{ margin-bottom:8px;}
+div#eyecatch .slide{ width:770px; float:left; margin-bottom:20px;}
+div#eyecatch .pickup{ width:226px; float:right; margin-bottom:28px; border-bottom:#CCC solid 1px;}
+div#eyecatch .pickup div.boxlink-l a{ display:block; width:224px; height:51px; border:#CCC solid 1px; border-bottom:none; text-align:center;}
+div#eyecatch .pickup div.boxlink-l img{ padding-top:8px;}
+
+div#eyecatch .pr{ text-align:center; margin-bottom:25px;}
+div#eyecatch .pr a{font-size:72%; letter-spacing:0.02em; margin-right:15px;}
+
+/* TOP 3カラム */
+div#container{ width:751px; float:left;}
+body#top #main-area { width:534px; float:right; margin-left:33px; display:inline;}
+body#top #news-area { width:184px; float:left; display:inline;}
+body#top #side-area { width:226px; float:right; display:inline;}
+
+*:first-child+html body#top #main-area { width:534px; float:right; margin-left:30px; display:inline;}
+
+/*TOP Searchエリア */
+body#top #main-area .search-area{ border-bottom:#CCC solid 1px; margin-bottom:34px;}
+body#top #main-area .search-area .title{ width:534px; height:54px; background:url(/img/title_search.gif) no-repeat left top; margin-bottom:16px;}
+body#top #main-area .search-area .title .text{ display:none;}
+body#top #main-area .search-area h2{}
+body#top #main-area .search-area .search{}
+body#top #main-area .search-area .search .left{ width:200px; float:left; margin-bottom:18px;}
+body#top #main-area .search-area .search .right{ width:323px; float:right; margin-bottom:18px;}
+body#top #main-area .search-area .search .right p{ font-size:75%;}
+
+body#top #main-area .search-area .search .title .text{ display:none;}
+body#top #main-area .search-area .search .job{ margin-bottom:14px;}
+body#top #main-area .search-area .search .job .title{ width:98px; height:18px; background:url(/img/menu_job.gif) no-repeat left top; margin-bottom:10px;}
+body#top #main-area .search-area .search .job ul li{ margin-bottom:2px; font-size:81%;}
+body#top #main-area .search-area .search .company{ margin-bottom:14px;}
+body#top #main-area .search-area .search .company .title{ width:175px; height:18px; background:url(/img/menu_brand.gif) no-repeat left top; margin-bottom:10px;}
+body#top #main-area .search-area .search .company .select{ width:198px;  background:#E9F2FA; text-align:center;}
+body#top #main-area .search-area .search .company .select ul{ margin:0 17px; padding: 12px 0; width:163px;}
+body#top #main-area .search-area .search .company .select ul li{ display:inline; font-size:90%; margin:0 7px;}
+body#top #main-area .search-area .search .free .submit-button{ border:0px; vertical-align:bottom;}
+body#top #main-area .search-area .search .free .title{ width:157px; height:18px; background:url(/img/menu_free.gif) no-repeat left top; margin-bottom:10px;}
+body#top #main-area .search-area .search .free .text{ width:134px; height:20px; vertical-align:bottom;}
+body#top #main-area .search-area .search .area{ margin-bottom:10px;}
+body#top #main-area .search-area .search .area .title{ width:113px; height:18px; background:url(/img/menu_area.gif) no-repeat left top; margin-bottom:10px;}
+body#top #main-area .search-area .search .area #map{ width:320px; height:360px; border:#CCC solid 1px; position:relative;}
+body#top #main-area .search-area .search .area #map .map-img{ width:290px; height:203px; position:absolute; top:10px; left:20px; z-index:10;}
+body#top #main-area .search-area .search .area #map #map-east{ width:184px; height:112px; border:#CCC solid 1px; z-index:1000; position:absolute; top:12px; left:12px; }
+body#top #main-area .search-area .search .area #map #map-east ul{ font-size:81%; margin: 8px 0 0 10px;}
+body#top #main-area .search-area .search .area #map #map-west{ width:156px; height:130px; border:#CCC solid 1px; z-index:1000; position:absolute; top:220px; left:12px;}
+body#top #main-area .search-area .search .area #map #map-west ul{ font-size:81%; margin: 8px 0 0 10px;}
+body#top #main-area .search-area .search .area #map #map-tokai{ width:130px; height:110px; border:#CCC solid 1px; z-index:1000; position:absolute; top:240px; right:8px;}
+body#top #main-area .search-area .search .area #map #map-tokai ul{ font-size:81%; margin: 8px 0 0 10px;}
+
+body#top #main-area .search-area .search .area #map li.child{ margin-left:5px; padding-left:5px; background:url(/common/img/bg_child.gif) no-repeat left 5px;}
+
+body#top #main-area .search-area .feature{ margin-bottom:12px;}
+body#top #main-area .search-area .feature .title{ height:19px; background:url(/img/title_offer_feature.gif) no-repeat left top;}
+body#top #main-area .search-area .feature .title .text{ display:none;}
+body#top #main-area .search-area .feature .title h3{ float:left; width:79px;}
+body#top #main-area .search-area .feature .title p{ font-size:75%; font-weight:normal; color:#999; vertical-align:middle; float:left; margin-left:89px;}
+body#top #main-area .search-area .feature .set{ margin-top:20px;}
+body#top #main-area .search-area .feature .set .image{ width:120px; float:left;}
+body#top #main-area .search-area .feature .set .image img{ width:120px; height:60px;}
+body#top #main-area .search-area .feature .set .image img.sp{ display:none;}
+body#top #main-area .search-area .feature .set .date{ width:395px; float:right; font-size:81%; color:#999;}
+body#top #main-area .search-area .feature .set .link{ width:395px; float:right; font-size:90%; font-weight:bold;}
+body#top #main-area .search-area .feature .set .text{ width:395px; float:right; font-size:81%;}
+
+/*TOP Contentsエリア */
+body#top #main-area .contents-area{}
+body#top #main-area .contents-area .title{ width:534px; height:51px; background:url(/img/title_contents.gif) no-repeat left top; margin-bottom:16px;}
+body#top #main-area .contents-area .title .text{ display:none;}
+body#top #main-area .contents-area h2{}
+body#top #main-area .contents-area .title .rss{ float:right; width:36px; height:11px; margin-top:20px; margin-right:13px;}
+body#top #main-area .contents-area .left{ width:267px; float:left; border-right:1px dotted #ccc; }
+body#top #main-area .contents-area .right{ width:253px; float:right;}
+
+body#top #main-area .contents-area .left .menu .title{ float:left; width:187px; height:19px; background:url(/img/title_jobnews.gif) no-repeat left top; }
+body#top #main-area .contents-area .left .menu .text{ display:none;}
+body#top #main-area .contents-area .right .menu .title{ float:left; width:176px; height:19px; background:url(/img/company_feature.gif) no-repeat left top; }
+body#top #main-area .contents-area .right .menu .text{ display:none;}
+
+body#top #main-area .contents-area .menu h3{ margin-bottom:32px;}
+body#top #main-area .contents-area .menu p{ font-size:81%; float:right; margin-bottom:32px;}
+body#top #main-area .contents-area .left .menu p{ margin-right:27px;}
+body#top #main-area .contents-area .right .menu p{ margin-right:12px;}
+body#top #main-area .contents-area .set{ margin-bottom:20px;}
+body#top #main-area .contents-area .set .thumbnail{ width:60px; float:left;}
+body#top #main-area .contents-area .set .about{ width:180px; float:left; margin-left:8px;}
+body#top #main-area .contents-area .set .about .date{ font-size:81%; color:#999; font-weight:normal; margin-bottom:3px;}
+body#top #main-area .contents-area .set .about .date .new{ margin-left:8px; vertical-align: -1px;}
+body#top #main-area .contents-area .set .about .link{ font-size:90%; font-weight:bold; margin-bottom:3px;}
+body#top #main-area .contents-area .set .about .text{ font-size:81%;}
+
+/*TOP左ナビ jobteria */
+body#top #news-area .jobteria { margin-bottom:30px;  }
+body#top #news-area .jobteria .title{ margin-bottom:5px; width:183px; height:54px; background:url(/img/title_jobteria.gif) no-repeat left 3px;}
+body#top #news-area .jobteria .title .text{ display:none;}
+body#top #news-area .jobteria .memo{ margin-bottom:5px; text-align: right; font-size:84%;}
+body#top #news-area .jobteria dt{ color:#999; font-size:75%; margin-bottom:8px; margin-top:15px;}body#top #news-area .jobteria .text{ margin:5px 0; font-size:69%;line-height: 1.4em;}
+
+body#top #news-area .jobteria dd{ font-weight:bold; font-size:84%; border-bottom:#CCC solid 1px; padding-bottom:20px;}
+
+/*TOP右ナビ ボタンエリア */
+body#top #side-area .entry{ margin-bottom:34px; padding:15px 0; background:url(/common/img/bg_mesh.gif) repeat left top;}
+body#top #side-area .entry p{ text-align:center;}
+
+/*TOP右ナビ 転職成功ノウハウ */
+body#top #side-area .knowhow { margin-bottom:12px;}
+body#top #side-area .knowhow .title{ width:226px; height:53px; background:url(/img/title_knowhow.gif) no-repeat left top;}
+body#top #side-area .knowhow .title .text{ display:none;}
+body#top #side-area .knowhow .set{ border-bottom:#CCC solid 1px; margin-top:10px;}
+body#top #side-area .knowhow .set img{ margin-bottom:6px;}
+body#top #side-area .knowhow .set .link{ margin-bottom:6px; font-weight:bold; font-size:84%;}
+body#top #side-area .knowhow .set .text{ margin-bottom:12px; font-size:75%;}
+
+/*TOP右ナビ お知らせ枠*/
+body#top #side-area div#Information { margin:0 0 10px 0;padding:0;color:#333333;width:223px;height:81px;border:1px solid #CCCCCC;background:url(/common/img/bg_mesh.gif);overflow-y:scroll;overflow-x:hidden; }
+body#top #side-area div#Information div#InformationTitle { margin:0 1px 10px 1px;height:35px;text-align:center;border-bottom:2px dotted #999999; }
+body#top #side-area div#Information div#InformationTitle h2 { font-size:81%;padding:10px 0 0 0; }
+body#top #side-area div#Information h3,
+body#top #side-area div#Information p { margin:0 10px;font-size:72%;line-height:1.5;letter-spacing:0.02em; }
+
+/* ======================
+ TOP 求人TOP共通
+========================= */
+/* 左ナビ 新着情報 */
+.offer-news { margin-bottom:34px;}
+.offer-news .title{ margin-bottom:8px; width:183px; height:54px; background:url(/img/title_news.gif) no-repeat left top;}
+.offer-news .title .text{ display:none;}
+.offer-news .count{ margin-bottom:20px; background:url(/common/img/bg_mesh.gif) repeat left top; padding:5px 0;}
+.offer-news .count p{ text-align:center; color:#FF9900; font-size:75%; font-weight:bold;}
+.offer-news .date{ color:#999; font-size:75%; padding-bottom:8px; border-bottom:#CCC solid 1px; }
+.offer-news .set{ border-bottom:#CCC solid 1px; margin-top:10px;}
+.offer-news .set .link{ margin-bottom:5px; font-size:84%; font-weight:bold;}
+.offer-news .set .text{ margin-bottom:10px; font-size:75%;}
+.offer-news .set img{ width:150px; height:37px;}
+
+/* ======================
+ 2カラム共通
+========================= */
+/* 2カラム */
+div#two-column #main-area { width:790px; float:right; margin-left:35px; display:inline;}
+div#two-column #side-area { width:184px; float:left; display:inline;}
+
+/* メインイメージ */
+#main-image{ margin-bottom:30px;}
+#main-image-s{ margin-bottom:30px;}
+#main-image .text{ display:none;}
+#main-image-s .text{ display:none;}
+
+body#search #main-image{ width:1012px; height:148px; background:url(/search/img/search.jpg) no-repeat left top;}
+body#search #main-image-s{ width:1012px; height:70px; background:url(/search/img/search_s.jpg) no-repeat left top;}
+
+body#contents #main-image{ width:1012px; height:148px; background:url(/contents/img/contents.jpg) no-repeat left top;}
+body#contents #main-image-s{ width:1012px; height:70px; background:url(/contents/img/contents_s.jpg) no-repeat left top;}
+
+body#service #main-image{ width:1012px; height:148px; background:url(/service/img/service.jpg) no-repeat left top;}
+body#service #main-image-s{ width:1012px; height:70px; background:url(/service/img/service_s.jpg) no-repeat left top;}
+
+body#company #main-image{ width:1012px; height:148px; background:url(/company/img/company.jpg) no-repeat left top;}
+body#company #main-image-s{ width:1012px; height:70px; background:url(/company/img/company_s.jpg) no-repeat left top;}
+
+body#client #main-image{ width:1012px; height:148px; background:url(/client/img/client.jpg) no-repeat left top;}
+body#client #main-image-s{ width:1012px; height:70px; background:url(/client/img/client_s.jpg) no-repeat left top;}
+
+body#contact #main-image{ width:1012px; height:148px; background:url(/contact/img/contact.jpg) no-repeat left top;}
+
+/* 左ナビ共通 登録エリア */
+.offer-feature{ margin-bottom:15px;}
+.offer-feature .title h2{ float:left; font-size:95%; color:#666; background:url(/search/img/icon_rectangle.gif) no-repeat left top; padding-left:12px;}
+.offer-feature .title p{ font-size:75%; font-weight:normal; color:#999; vertical-align:middle; float:right; padding-top:1px;}
+.offer-feature .set{ margin-top:15px; border-bottom: #CCC solid 1px;}
+.offer-feature .set .date{ font-size:75%; color:#999; margin-bottom:10px;}
+.offer-feature .set .image{ text-align:center; margin-bottom:10px;}
+.offer-feature .set .image img{ width:120px; height:60px;}
+.offer-feature .set .link{ font-size:84%; font-weight:bold; margin-bottom:10px;}
+.offer-feature .set .text{ font-size:75%; margin-bottom:15px;}
+
+#side-area .pr-area{ width:164px; padding:9px; border:#C4E774 solid 1px; background:#F3F8DD; margin-bottom:20px;}
+#side-area .pr-area .text{ font-size:72%; font-weight:bold; margin:5px 5px 10px 5px;}
+#side-area .pr-area .link{}
+
+/*左ナビ共通 人気記事ランキング*/
+#side-area .ranking{ margin-bottom:20px;}
+#side-area .ranking h2{}
+#side-area .ranking .image{ width:185px; height:31px; background:url(/contents/img/title_ranking.gif) no-repeat left top; margin-bottom:5px;}
+#side-area .ranking .image .text{ display:none;}
+#side-area .ranking .set{ border-top:#CCC solid 1px; padding:15px 0;}
+#side-area .ranking .first{ border:none;}
+#side-area .ranking .set .number{ float:left; width:20px; margin-bottom:12px;}
+#side-area .ranking .set img.sp{ display:none;}
+#side-area .ranking .set h3{ float:left; width:153px; margin-left:5px; margin-bottom:12px; font-size:75%;}
+#side-area .ranking .set .logo{ clear:both; float:left; width:60px; height:60px; margin-left:8px;}
+#side-area .ranking .set .text{ float:left; width:102px; margin-left:10px; font-size:70%; line-height: 1.4em;}
+#side-area .ranking .set .note{ color:#999;}
+
+/* 共通SEOキーワードエリア */
+#main-area .keyword{ border:#999 solid 1px; padding:15px 0px; margin-top:40px; clear:both; }
+#main-area .keyword div.left{ width:346px; float:left; padding-right:31px; padding-left:16px; border-right:#CCC solid 1px; }
+#main-area .keyword div.right{ width:346px; float:left; padding-right:31px; padding-left:16px; }
+#main-area .keyword h3{ margin-left:15px; color:#999; font-size:75%; font-weight:bold; margin-bottom:10px;}
+#main-area .keyword ul { margin-left:15px; line-height: 1.5em;}
+#main-area .keyword ul.block { width:150px; display:inline-block;}
+#main-area .keyword li{ font-size:75%; background:url(/common/img/arrow_gray.gif) no-repeat left 5px; padding-left:8px; }
+#main-area .keyword li.parent{ background:none; padding-left:0;}
+#main-area .keyword .right-link { margin-right: 15px; margin-bottom: 0; font-size:75%; }
+
+/* ======================
+ 求人系
+========================= */
+/* 求人TOP 見出し*/
+body#search .top h2{ margin-bottom:15px; font-size:100%; color:#666; background:url(/search/img/icon_rectangle.gif) no-repeat left top; padding-left:14px; padding-top:1px;}
+body#search .top h3{ font-size:89%; color:#666; background:url(/search/img/icon_cube.gif) no-repeat left 5px; padding-left:13px;}
+
+/* 求人TOPページ内リンク */
+body#search .anchor-link{ padding-bottom:20px; margin-bottom:15px; border-bottom:#CCC solid 1px;}
+body#search .anchor-link a{ margin-left:16px;}
+body#search .anchor-link a.first{ margin-left:0px;}
+
+/* 求人TOPフリーワード検索 */
+body#search .free{ margin-bottom:25px;}
+body#search .free h3{ margin-bottom:15px;}
+body#search .free input.text{ color:#999; width:354px; height:20px; padding: 3px 0 0 5px; vertical-align:bottom; background:#F9F9F9; border:#CCC solid 1px;}
+body#search .free .submit-button{ border:0px; vertical-align:bottom;}
+
+/* 求人TOPタブメニュー */
+#tab{ margin-bottom:3px;}
+#tab:first-of-type{ margin-bottom:4px;}/*FF3.5～,safari3～*/
+#tab:not(:target) {margin-bottom:3px\9; }/* IE9 */
+#tab li a{ text-decoration:none;}
+#tab li { display:inline; margin:0 0 0 5px; padding:6px 21px; font-size:75%; color:#3399CC; background-color:#E1F0F7;}
+#tab li.selected { background-color:#3399CC;}
+#tab li.selected a { color:#fff;}
+
+/* 求人TOP企業/ブランド名検索 */
+body#search .company-brand h3{ margin-bottom:25px;}
+body#search .brand { padding:10px 10px 15px 10px;width:768px;border:#3399CC solid 1px; }
+body#search .brand .title { color:#3399CC;font-size:84%;background:url(/search/img/bg_text.gif) no-repeat left top;padding:1px 0 0 7px;margin-bottom:10px;clear:both; }
+body#search .brand ul { font-size:84%;font-weight:bold;line-height:1.3;clear:both; }
+body#search .brand ul li { margin:0 8px 0 0;width:184px;height:120px;float:left;display:block; }
+body#search .brand ul li img { margin:0 0 8px 0;padding:11px 16px;width:150px;height:37px;border:1px solid #999999;display:block; }
+body#search .brand div.sectiontop { text-align:right;font-size:75%;clear:both; }
+body#search .brand div.sectiontop a { padding-left:10px;background:url(/common/img/arrow_up.gif) no-repeat left center; }
+
+/* 求人バナー */
+body#search .banner{ margin:15px 0 35px;}
+
+/* 求人系共通 職種エリア検索 */
+body#search .job-area{ margin-bottom:45px;}
+body#search .job-area .menu h3{ float:left; margin-bottom:15px; font-size:89%; color:#666; background:url(/search/img/icon_cube.gif) no-repeat left 5px; padding-left:13px;}
+body#search .job-area .menu p{ float:left; font-size:75%; font-weight:normal; color:#999; margin-left:10px; vertical-align:middle;}
+body#search .job-area .select{ width:768px; padding:15px 10px 25px 10px; border: #3399CC solid 1px;}
+body#search .job-area .select .left{ width:246px; float:left; border-right:1px dotted #ccc; margin-bottom:20px;}
+body#search .job-area .select .left h4{ font-size:81%; font-weight:bold; color:#3399CC; width:215px; padding:6px 10px 6px 10px; background:#E1F0F7; margin-bottom:15px;}
+body#search .job-area .select .right{ width:510px; float:right;}
+body#search .job-area .select .right h4{ font-size:81%; font-weight:bold; color:#3399CC; width:490px; padding:6px 10px 6px 10px; background:#E1F0F7; margin-bottom:15px;}
+
+body#search .job-area .select .right .area-left{ width:232px; float:left; margin-left:10px;}
+body#search .job-area .select .right .area-right{ width:232px; float:right; margin-right:20px;}
+
+body#search .job-area .select ul{ margin-left:5px;}
+body#search .job-area .select ul.plural{ margin-top:34px;}
+body#search .job-area .select li{ font-size:81%; margin-bottom:5px; }
+body#search .job-area .select li.child{ margin-left:10px;}
+body#search .job-area .select .button{ text-align:center;}
+body#search .job-area .select .submit-button{ border:0px; vertical-align:bottom;}
+
+/* 求人一覧 左ナビ */
+#side-area .research{ margin-bottom:34px;}
+#side-area .research h2{ margin-bottom:20px;  font-size:100%; color:#666; background:url(/search/img/icon_rectangle.gif) no-repeat left top; padding-left:12px; padding-top:1px;}
+
+.research-area{ width:162px; padding:10px 10px 15px 10px; border: #3399CC solid 1px;}
+.research-area h3{ margin-bottom:10px; font-size:89%; color:#666; background:url(/search/img/icon_cube.gif) no-repeat left 5px; padding-left:13px;}
+.research-area .submit-button{ border:0px; vertical-align:bottom; margin-bottom:20px;}
+.research-area .text{ width:106px; height:20px; vertical-align:bottom; margin-bottom:20px;}
+.research-area ul{ margin-left: 1.5em; margin-bottom:20px;}
+.research-area li{ font-size:75%; margin:0 0; text-indent: -1.5em;}
+.research-area .check-button{ border:0px;  width:158px; height:26px; vertical-align:bottom;}
+
+/* 求人一覧 メイン */
+body#search .condition { background:#E1F0F7;margin:0 0 50px 0;padding:20px; }
+body#search .condition img { border:1px solid #FFFFFF; }
+body#search .condition .left { margin:5px 25px 5px 5px;float:left; }
+body#search .condition h1 { margin:0 0 0.5em 0;font-size:100%; }
+body#search .condition p { font-size:75%;font-weight:normal;line-height:1.5;display:block; }
+
+body#search .result{ margin-bottom:0;overflow:hidden;}
+body#search .result .count{ font-size:75%; float:left; margin-bottom:15px;}
+body#search .result .count{ width:280px; }
+body#search .result .count span{ width:123px;margin:0 5px 0 0; }
+body#search .result .count ul{ float:right;margin:0 0 0 5px;width:150px;text-arign:left; }
+body#search .result .count li{ display:inline; margin: 0; padding:2px 6px; }
+body#search .result .count li.now{ background:#3399CC;}
+body#search .result .count li.now a{ color:#FFF; text-decoration:none;}
+body#search .result .pager{ font-size:75%; float:right; margin-bottom:15px;text-align: right; }
+body#search .result .pager span{ margin: 0 3px;}
+
+body#search .result .set{ position:relative; padding:10px 10px 15px 10px; border: #3399CC solid 1px; margin-bottom:24px;}
+body#search .result .set .title{ background:#E1F0F7; padding: 8px 10px; margin-bottom:10px; }
+body#search .result .set .title h2{ float:left; font-weight:bold; font-size:96%; }
+body#search .result .set .title img{ float:left; margin:4px 0 0 10px; vertical-align:text-bottom;}
+body#search .result .set .title p { font-size:75%; color:#5e5e5e; float:right;}
+body#search .result .set ul.info{ clear:both; margin-bottom:20px;}
+body#search .result .set ul.info li{ display:inline;}
+body#search .result .set .policy{ border-bottom:#CCC solid 1px; margin-bottom:15px;}
+body#search .result .set .policy img{ width:150px; float:left; margin-right:20px; margin-bottom:20px;}
+body#search .result .set .policy{ margin-left:10px;}
+body#search .result .set .policy p{ font-size:79%; font-weight:bold; width:580px; float:left; margin-bottom:20px;}
+body#search .result .set .policy p.no-img{ width:582px; margin-left:5px;}
+body#search .result .set .text{ width:560px; float:left; font-size:81%; margin-left:10px;}
+body#search .result .set .button{ width:180px; float:right;}
+body#search .result .set .button img{ position:absolute; right:10px; bottom:15px;}
+
+/* 求人一覧 フリーワード再検索 */
+body#search .research-free{ margin-bottom:25px; width:425px; float:left; margin-bottom:60px;}
+body#search .research-free h3{ margin-bottom:15px; font-size:89%; color:#666; background:url(/search/img/icon_cube.gif) no-repeat left 5px; padding-left:13px;}
+body#search .research-free input.text{ width:354px; height:20px; padding: 3px 0 0 5px; vertical-align:bottom; background:#F9F9F9; border:#CCC solid 1px;}
+body#search .research-free .submit-button{ border:0px; vertical-align:bottom;}
+
+/* 求人一覧 企業/ブランド名再検索 */
+body#search .research-brand{ width:353px; float:right; margin-bottom:60px;}
+body#search .research-brand h3{ margin-bottom:10px; font-size:89%; color:#666; background:url(/search/img/icon_cube.gif) no-repeat left 5px; padding-left:13px;}
+body#search .research-brand ul{ padding:10px 10px; text-align:center; background:#E1F0F7;}
+body#search .research-brand ul li{ display:inline; font-size:75%; font-weight:bold; margin: 0 3px;}
+
+/* 求人一覧 0件 */
+body#search .list-none .left-text{ width:544px; float:left; text-align:center; font-size:81%; margin:50px 0 60px 0;}
+body#search .list-none .left-text p{ margin:30px 0;}
+body#search .list-none .right-image{ width:243px; float:right; text-align:center; margin:50px 0 60px 0;}
+
+/* 求人詳細 */
+body#search .detail{}
+body#search .detail .title{ margin-bottom:10px; padding:12px 15px;background:#E1F0F7;}
+body#search .detail .title h1{ float:left; font-weight:bold; font-size:96%;}
+body#search .detail .title img{ float:left; margin-left:10px; margin-top:4px;}
+body#search .detail .title p { font-size:75%; color:#5e5e5e; float:right; text-align:right; }
+
+body#search .detail ul.info{ margin-bottom:20px;}
+body#search .detail ul.info li{ display:inline;}
+body#search .detail .policy-img{ width:150px; float:left; margin-right:20px; margin-bottom:20px;}
+body#search .detail .policy-text{ font-size:79%; font-weight:bold; width:590px; float:left; margin-bottom:20px;}
+body#search .detail table{ border-collapse:collapse; width:790px; font-size:81%; border-top:#CCC solid 1px; text-align:left; margin-bottom:15px; }
+body#search .detail table th{ width:150px; border-bottom:#CCC solid 1px; vertical-align:top; background:#E1F0F7; padding:12px 15px;}
+body#search .detail table td{ border-bottom:#CCC solid 1px; vertical-align:top; padding:12px 15px;}
+
+body#search .detail .entry{ text-align:center; border:#3D9ECE solid 3px; padding:8px;}
+body#search .detail .entry h2{ background:#E1F0F7; font-size:120%; color:#3399CC; font-weight:bold; margin-bottom:8px; padding:8px 0;}
+body#search .detail .entry .left{ width:379px; float:left; border-right:#3D9ECE solid 1px;}
+body#search .detail .entry .right{ width:379px; float:right;}
+body#search .detail .entry h3{ font-size:85%; font-weight:normal; color:#3399CC; margin-top:18px; }
+body#search .detail .entry .text{ font-size:75%; margin-top:20px;}
+body#search .detail .entry img{ margin:20px 0 15px 0;}
+
+
+/* ======================
+ 転職系
+========================= */
+/*タイトル*/
+body#contents .contents-title{ padding:17px 0; border-top:#2EC2C4 solid 3px; border-bottom:#2EC2C4 solid 1px;}
+body#contents .contents-title h1{ font-size:130%; font-weight:bold; color:#333;}
+body#contents .contents-title h2{ font-size:120%; font-weight:bold; color:#333;}
+body#contents .contents-title h2.left{ float:left; width:300px; }
+body#contents .contents-title .rss{ float:right; width:36px; margin-top:5px; margin-right:13px;}
+
+/*共通左ナビ お役立ちコンテンツ*/
+body#contents .side-navi{ width:173px; margin-bottom:20px; border:#CCC solid 1px; padding:10px 0 0 7px;}
+body#contents .side-navi h2{ margin-bottom:10px; font-size:89%; background:url(/contents/img/icon_rectangle.gif) no-repeat left top; padding-left:12px;}
+body#contents .side-navi li{ padding:8px 0; margin-right:7px; font-size:84%; font-weight:bold; border-top:#CCC dotted 1px;}
+body#contents .side-navi li img{ vertical-align:middle;}
+body#contents .side-navi li a{ display:block; padding-left:10px; background:url(/common/img/arrow_sky.gif) no-repeat left 4px;}
+body#contents .side-navi li.first{ border:none;}
+body#contents .side-navi li:hover{ background-color:#E0F6F6;}
+body#contents .side-navi li.now{ background-color:#E0F6F6;}
+body#contents .side-navi li.now a{ text-decoration:none;}
+
+/* 転職TOP */
+body#contents .top-list{ margin-top:35px; margin-bottom:34px;}
+body#contents .top-list .title{ margin-bottom:16px;}
+body#contents .top-list .left{ width:392px; float:left; border-right: 1px dotted #ccc;}
+body#contents .top-list .right{ width:375px; float:right;}
+body#contents .top-list .menu h3{ float:left; margin-bottom:32px; background:url(/contents/img/icon_rectangle.gif) no-repeat left top; padding-left:12px; padding-top:1px;}
+body#contents .top-list .menu span{ font-size:81%; float:right; margin-right:20px; margin-bottom:32px;}
+body#contents .top-list .set{ margin-bottom:20px;}
+body#contents .top-list .set .thumbnail{ width:60px; float:left;}
+body#contents .top-list .left .set .about{ width:300px; float:left; margin-left:10px;}
+body#contents .top-list .right .set .about{ width:300px; float:left; margin-left:10px;}
+body#contents .top-list .set .about .date{ font-size:81%; color:#999; font-weight:normal; margin-bottom:3px;}
+body#contents .top-list .set .about .date .new{ margin-left:8px; vertical-align:-1px;}
+body#contents .top-list .set .about .link{ font-size:90%; font-weight:bold; margin-bottom:3px;}
+body#contents .top-list .set .about .text{ font-size:81%;}
+
+/* 転職、サービス共通下層メニュー */
+body#contents .top-useful, body#service .top-useful, body#company .top-useful, body#client .top-useful, body#contact .top-useful { margin-top:20px; margin-bottom:34px; }
+body#contents .top-useful .left, body#service .top-useful .left, body#company .top-useful .left, body#client .top-useful .left, body#contact .top-useful .left { float:left; width:390px; }
+body#contents .top-useful .right, body#service .top-useful .right, body#company .top-useful .right, body#client .top-useful .right, body#contact .top-useful .right { float:right; width:390px; margin-right:3px;}
+body#contents .top-useful .set, body#service .top-useful .set, body#company .top-useful .set, body#client .top-useful .set, body#contact .top-useful .set { margin-bottom: 15px; }
+body#contents .top-useful .set a.title, body#service .top-useful .set a.title, body#company .top-useful .set a.title, body#client .top-useful .set a.title, body#contact .top-useful .set a.title { display:block; width:379px; height:31px; color:#666; font-size:89%; font-weight:bold; text-decoration:none; padding:11px 0 0 13px; }
+body#contents .top-useful .set a.title:hover, body#service .top-useful .set a.title:hover, body#company .top-useful .set a.title:hover, body#client .top-useful .set a.title:hover, body#contact .top-useful .set a.title:hover { color: #09f; }
+body#contents .top-useful .menu, body#service .top-useful .menu, body#company .top-useful .menu, body#client .top-useful .menu, body#contact .top-useful .menu { border:#CCC solid 1px; padding:4px; border-top:none; }
+body#contents .top-useful .menu .image, body#service .top-useful .menu .image, body#company .top-useful .menu .image, body#client .top-useful .menu .image, body#contact .top-useful .menu .image { float:left; width:109px; }
+body#contents .top-useful .menu .text, body#service .top-useful .menu .text, body#company .top-useful .menu .text, body#client .top-useful .menu .text, body#contact .top-useful .menu .text { float:right; width:256px; font-size:84%; margin-top:8px; }
+body#contents .top-useful .link, body#service .top-useful .link, body#company .top-useful .link, body#client .top-useful .link, body#contact .top-useful .link { margin-bottom:5px; }
+
+body#contents .top-useful .set a.title { background:url(/contents/img/bg_menu.jpg) no-repeat -1px top; }
+
+body#contents .top-banner{ margin-top:20px; margin-bottom:34px;}
+body#contents .top-banner ul{ letter-spacing:-.40em;}
+body#contents .top-banner li{ display:inline-block; letter-spacing:normal; width:390px; height:106px; margin-right:7px;}
+body#contents .top-banner li.right{ margin-right:0;}
+
+/* 企業特集一覧 */
+body#contents .summary{ font-size:81%; margin-top:20px; margin-bottom:35px;}
+
+/* 企業特集、シゴトNEWS共通リスト */
+body#contents #list .page{ margin:20px 0;}
+body#contents #list .block{ float:left; margin-right:27px; width:374px; padding:20px 0; border-bottom:#CCC dotted 1px; background:url(/common/img/bg_arrow.gif) no-repeat right center;}
+body#contents #list .block.hover{ background:url(/common/img/bg_arrow_on.gif) no-repeat right center;}
+body#contents #list .right{ margin-right:0;}
+body#contents #list .first{ border-top:#CCC dotted 1px; }
+body#contents #list .image { float:left; width:60px;}
+body#contents #list .menu{ float:left; width:260px; margin-left:18px;}
+body#contents #list .menu .date{ color:#999; font-size:81%;}
+body#contents #list .menu .link{ font-size:89%; font-weight:bold;}
+body#contents #list .menu .text{ font-size:84%; margin-top:5px;}
+
+/*転職系ページ送り*/
+body#contents .pagenavi{ background:#FFF; border:0; font-size:75%; text-align:center; padding: 5px;}
+body#contents .pagenavi a, body#contents .pagenavi span { margin: 0 1px; padding:2px 6px;}
+body#contents .pagenavi a.highlight { color:#FFF; text-decoration:none; background:#2EC2C4; }
+
+/* 企業特集タブ */
+body#contents ul.tabList{overflow:hidden; zoom:1;}
+body#contents ul.tabList li{padding:0 0 0 8px; float:left;}
+
+body#contents .tabs {clear:both;}
+body#contents .tabs li {display: none;}
+body#contents .tabs li.active {display: block;}
+
+/* シゴトNEWS一覧 */
+body#contents .job-title .text{ display:none;}
+body#contents .job-title{ width:790px; height:129px; background:url(/contents/news/img/title_job_news.gif) no-repeat left top; margin-bottom:25px;}
+
+/* シゴトNEW詳細 */
+body#contents .detail-title h1{ font-size:130%; font-weight:bold; border-bottom:#000 solid 1px; text-align:center; padding:18px 0; line-height: 1.3em;}
+
+/* 企業特集詳細,シゴトNEW詳細 共通 */
+body#contents .detail{ margin-top:7px;}
+body#contents .detail .date{ font-size:75%; font-weight:bold; text-align:right; margin-bottom:14px; color:#666;}
+body#contents .detail .company-img{ margin-bottom:20px;}
+body#contents .detail h2{ margin-bottom:15px; margin-top:20px; font-size:100%; background:url(/contents/img/icon_rectangle.gif) no-repeat left top; padding-left:12px; padding-top:1px;}
+body#contents .detail h2.img{ margin-bottom:30px; background:none; padding:0; }
+body#contents .detail h3{ margin-bottom:15px; font-size:89%; font-weight:bold; background:url(/contents/img/icon_cube.gif) no-repeat left 4px; padding-left:14px;}
+body#contents .detail .intro{ font-size:80%; margin-bottom:15px; letter-spacing:0.1em; line-height:1.6em;}
+body#contents .detail .set p{ font-size:80%; margin-bottom:15px; letter-spacing:0.1em; line-height:1.6em;}
+body#contents .detail .set ul{ margin-bottom:30px; }
+body#contents .detail .set ul li{ font-size:81%; letter-spacing:0.1em; line-height:1.7em; }
+body#contents .detail .set ul li:before { content: "◇ " }
+body#contents .detail .question{ font-size:85%; color:#555; margin-bottom:15px; font-weight:bold; }
+body#contents .detail .question:before { content: "― " }
+body#contents .detail .caption{ font-size:71%; line-height:1.2em;}
+body#contents .detail .set .profile{ font-size:71%; line-height:1.2em; margin-bottom:15px; }
+body#contents .detail .set .caption{ font-size:71%; }
+body#contents .detail ul.caption { margin-bottom:30px; }
+body#contents .detail ul.caption li{ letter-spacing:0.1em; line-height:1.7em; }
+body#contents .detail ul.caption li:before { content: "※ " }
+body#contents .detail .set .right{ float:right; margin-left:40px; margin-bottom:10px;}
+body#contents .detail .set .left{ float:left; margin-right:22px;}
+body#contents .detail .set .all{ margin-bottom:23px;}
+body#contents .detail .set img{ margin-bottom:7px;}
+body#contents .detail .center { margin-bottom:30px; }
+body#contents .detail .center img { margin-bottom:10px; }
+body#contents .detail table{ width:790px; border-collapse:collapse;}
+body#contents .detail table h4{ background:none; font-size:100%; padding:0; margin:0; width:auto; }
+body#contents .detail table th{ padding:5px 10px; vertical-align:top; background:#E0F6F6; text-align:left; font-size:75%; font-weight:normal;}
+body#contents .detail table .jobtype{ width:200px;}
+body#contents .detail table td{ padding:11px 10px 11px 10px; vertical-align:top; font-size:75%; border-bottom:#CCC solid 1px; letter-spacing:0.1em;}
+
+body#contents .detail h4{ margin-top:34px; font-weight:bold; padding:10px; font-size:89%; background:#c7eeee;}
+body#contents .detail .entry{ padding:15px 12px 7px 12px; border:#c7eeee solid 1px; margin:0 0 30px;}
+body#contents .detail .entry .doda{ padding-left:75px; background:url(/contents/img/icon_doda.gif) no-repeat left 3px; margin-bottom:12px; }
+body#contents .detail .entry .an{ padding-left:75px; background:url(/contents/img/icon_an.gif) no-repeat left 3px; margin-bottom:12px; }
+body#contents .detail .entry .news{ padding-left:75px; background:url(/contents/img/icon_news.gif) no-repeat left 3px; margin-bottom:12px; }
+body#contents .detail .entry .feature{ padding-left:75px; background:url(/contents/img/icon_feature.gif) no-repeat left 3px; margin-bottom:12px; }
+body#contents .detail .entry .job{ padding-left:75px; background:url(/contents/img/icon_job.gif) no-repeat left 3px; margin-bottom:12px; }
+
+body#contents .detail .entry .link{ text-indent:-1.0em;}
+body#contents .detail .entry .link img{ vertical-align:middle;}
+body#contents .detail .entry .link a{ font-size:84%; line-height:1.5em; }
+
+body#contents .detail .button{ text-align:center; margin-bottom:40px;}
+body#contents .detail .button .note{ text-align:center; font-size:75%; margin-bottom:15px;}
+body#contents .detail .button .link{ margin-bottom:34px; font-size:84%;}
+body#contents .detail .button .link-text{ margin-bottom:34px; text-align:center;}
+body#contents .detail .button .link-text a{ background:url(/common/img/banner_yellow.jpg) no-repeat left top; text-decoration:none; font-size:84%; padding-top:17px; width:406px; height:38px; display:inline-block; color:#fff; font-weight:bold;}
+body#contents .detail .button .link-text.twoline a{ padding-top:9px; width:406px; height:46px;}
+body#contents .detail .button .link-text a:hover{ background:url(/common/img/banner_yellow_on.jpg) no-repeat left top; color:#fff; text-decoration:underline;}
+
+body#contents .detail .company{ background:#eeeeee; padding:20px;}
+body#contents .detail .company .image{ float:left; width:176px;}
+body#contents .detail .company .right{ float:right; width:557px;}
+body#contents .detail .company .right .name{ font-size:89%; font-weight:bold; border-bottom:#999 solid 1px; padding-bottom:5px;}
+body#contents .detail .company .right .text{ font-size:74%; margin-top:13px;}
+
+body#contents .detail .keyword{ width:764px; border:#999 solid 1px; padding:15px; margin-top:20px;}
+body#contents .detail .keyword .title{ font-size:89%; color:#999; font-weight:bold; margin-bottom:10px; margin-left:8px;}
+body#contents .detail .keyword li{ font-size:75%; background:url(/common/img/arrow_gray.gif) no-repeat left 5px; padding-left:8px; }
+body#contents .detail .keyword li a{ color:#999;}
+
+/* body#contents strong{ font-size:75%; } */
+
+/* セミナー申し込み用 */
+body#contents .detail .seminar { padding:5px 15px 10px;background:#fff2eb; margin:0 0 20px; }
+body#contents .detail .seminar h2 { margin:0; background:none; padding:0; }
+body#contents .detail .seminar h3{ margin-bottom:15px; font-size:89%; font-weight:bold; background:url(/contents/company/img/icon_cube_seminar.gif) no-repeat left 4px; padding-left:14px;}
+body#contents .detail .seminar .seminarentry { margin:10px 45px 30px 65px; }
+body#contents .detail .seminar img { margin:0 25px 0 0; }
+body#contents .detail .seminar p{ font-size:80%; margin-bottom:15px; letter-spacing:0.1em; line-height:1.6em;}
+
+/* インテリア特集一覧 */
+body#contents .interior-title .text{ display:none;}
+body#contents .interior-title{ width:790px; height:130px; background:url(/contents/feature/img/013_interior_main.jpg) no-repeat left top; margin-bottom:25px;}
+
+
+/* ======================
+ サービス
+========================= */
+/*タイトル*/
+body#service .service-title{ padding:17px 0; border-top:#FF5757 solid 3px; border-bottom:#FF5757 solid 1px;}
+body#service .service-title h1{ font-size:130%; font-weight:bold; color:#333;}
+/* body#service .service-title h1,  x:-moz-any-link  { font-weight:normal; } for FF */
+body#service .service-title h2{ font-size:120%; font-weight:bold; color:#333;}
+
+/*共通左ナビ*/
+body#service .side-navi{ width:173px; margin-bottom:20px; border:#CCC solid 1px; padding:10px 0 0 7px;}
+body#service .side-navi h2{ margin-bottom:10px; font-size:89%; background:url(/service/img/icon_rectangle.gif) no-repeat left top; padding-left:12px;}
+body#service .side-navi li{ padding:8px 0; margin-right:7px; font-size:84%; font-weight:bold; border-top:#CCC dotted 1px;}
+body#service .side-navi li img{ vertical-align:middle;}
+body#service .side-navi li a{ display:block; padding-left:10px; background:url(/common/img/arrow_red.gif) no-repeat left 4px;}
+body#service .side-navi li.first{ border:none;}
+body#service .side-navi li:hover{ background-color:#FFE7E7;}
+body#service .side-navi li.now{ background-color:#FFE7E7;}
+body#service .side-navi li.now a{ text-decoration:none;}
+
+/*サービスTOP*/
+body#service .service-point { margin: 0 0 27px;width:790px; }
+
+body#service #service-top { margin: 25px 0 0; }
+body#service #service-top .set { overflow: hidden;width:790px; }
+body#service #service-top #point2, body#service #service-top #point3, body#service #service-top #point4, body#service #service-top #point5 { margin-top: 40px; }
+body#service #service-top h3 { margin: 0 0 30px; padding: 0 0 0 50px; line-height: 60px; border-bottom: 5px solid #FFD5D5; font-size: 130%; }
+body#service #service-top h3 span { display: none; }
+body#service #service-top #point1 h3 { background: url(/service/img/icon_point1.gif) 0 0 no-repeat; }
+body#service #service-top #point2 h3 { background: url(/service/img/icon_point2.gif) 0 0 no-repeat; }
+body#service #service-top #point3 h3 { background: url(/service/img/icon_point3.gif) 0 0 no-repeat; }
+body#service #service-top #point4 h3 { background: url(/service/img/icon_point4.gif) 0 0 no-repeat; }
+body#service #service-top #point5 h3 { background: url(/service/img/icon_point5.gif) 0 0 no-repeat; }
+body#service #service-top ul li { padding: 0 0 0 1.2em; background: url(/service/img/icon_listhead.gif) 0 0.6em no-repeat; }
+body#service #service-top ul.caption { margin: 15px 0 0; }
+body#service #service-top ul.caption li { margin: 0 0 0 1em; padding: 0; text-indent: -1em; background: none; }
+body#service #service-top ul.caption li:before {content:"※";}
+body#service #service-top p, body#service #service-top ul { font-size: 81%; line-height: 1.7; }
+body#service #service-top p span { font-size: 60%; vertical-align: top; }
+body#service #service-top .point-child { margin: 0 0 30px; }
+body#service #service-top .point-child h4 { margin: 0 0 15px; padding: 0 0 0 15px; background: url(/service/img/icon_line.gif) 1px 0.3em no-repeat; font-size: 81%; }
+body#service #service-top .point-child p { padding: 0 0 0 15px; }
+
+body#service #service-top #point1 .figure { margin: 0 0 25px; }
+body#service #service-top #point2 .figure { float: right;}
+body#service #service-top #point2 .text-block { margin: 0 380px 0 0; }
+body#service #service-top #point3 .figure { float: left;}
+body#service #service-top #point3 .text-block { margin: 0 0 0 375px; }
+body#service #service-top #point4 .figure { float: right; }
+body#service #service-top #point4 .text-block { margin: 0 510px 0 0; }
+body#service #service-top #point5 .figure { margin: 0 0 10px; }
+
+body#service .top-useful .set { width:790px;clear:both; }
+body#service .top-useful .set a.title{ background:url(/service/img/bg_menu.jpg) no-repeat -1px top; }
+
+/*FAQ*/
+body#service #faq { margin: 30px 0 0; }
+body#service #faq .pickup { padding: 20px; border: 4px solid #FFE1E1; }
+body#service #faq .pickup h3 { margin-bottom: 20px; }
+body#service #faq .pickup li { font-size: 81%; padding: 0 0 7px 15px; background: url(/service/img/arrow_down.gif) 1px 7px no-repeat; }
+body#service #faq .anchor-link { margin:30px 0 40px;}
+body#service #faq .anchor-link ul { overflow: hidden; }
+body#service #faq .anchor-link ul li { float: left; width: 255px; padding: 0 0 12px 12px; }
+body#service #faq .anchor-link li.first { padding-left:0;}
+body#service #faq h2{ margin-bottom:30px; font-size:100%; background:url(/service/img/icon_rectangle.gif) no-repeat left top; padding-left:12px; padding-top:1px;}
+body#service #faq h3{ margin-bottom:30px; font-size:89%; font-weight:bold; background:url(/service/img/icon_cube.gif) no-repeat left 4px; padding-left:14px;}
+body#service #faq .set { margin: 0 0 12px; border: 1px solid #ccc; font-size: 81%; line-height: 1.7; }
+body#service #faq .q { padding: 10px; overflow: hidden; }
+body#service #faq .q p { width: 668px; float: left; }
+body#service #faq .q p span { color: #FF5757; }
+body#service #faq .q .switch { float: right; }
+body#service #faq  .a { position: relative; padding: 10px; overflow: hidden; background: #FFE1E1; }
+body#service #faq .a p, body#service #faq .a ul { width: 660px; margin-left: 18px; }
+body#service #faq .a ul li { padding: 0 0 0 1.2em; background: url(/service/img/icon_listhead.gif) 0 0.6em no-repeat; }
+body#service #faq .a ul.caption { margin: 15px 0 0; }
+body#service #faq .a ul.caption li { margin: 0 0 0 1em; padding: 0; text-indent: -1em; background: none; }
+body#service #faq .a ul.caption li:before {content:"※";}
+body#service #faq .a .switch { position: absolute; right: 10px; bottom: 10px; }
+body#service #faq .switch { display: none; }
+
+/*転職支援サービスの流れ*/
+body#service #flow { margin:30px 0 0; }
+body#service #flow .anchor-link ul { overflow: hidden; }
+body#service #flow .anchor-link ul li { float: left; width: 246px; padding-left: 26px; background: url(/common/img/arrow_red.gif) no-repeat 10px center; }
+body#service #flow .anchor-link li.first { padding-left:0;}
+body#service #flow h2 { margin: 40px 0 10px; padding: 4px 0 3px 40px; color: #FF5757; }
+body#service #flow h2 span { display: none; }
+body#service #flow h2#flow1 { background: url(/service/img/icon_number1.gif) 0 0 no-repeat; }
+body#service #flow h2#flow2 { background: url(/service/img/icon_number2.gif) 0 0 no-repeat; }
+body#service #flow h2#flow3 { background: url(/service/img/icon_number3.gif) 0 0 no-repeat; }
+body#service #flow h2#flow4 { background: url(/service/img/icon_number4.gif) 0 0 no-repeat; }
+body#service #flow h2#flow5 { background: url(/service/img/icon_number5.gif) 0 0 no-repeat; }
+body#service #flow h2#flow6 { background: url(/service/img/icon_number6.gif) 0 0 no-repeat; }
+body#service #flow .set { padding: 20px 0; overflow: hidden; background: url(/service/img/line_flow.gif) 0 0 no-repeat; }
+body#service #flow .set.first { background: none; border-top: 1px dotted #FF5757; }
+body#service #flow .set.last { border-bottom: 1px dotted #ccc; }
+body#service #flow .set h3 { position: relative; float: left; width: 160px; height: 90px; background: url(/service/img/bg_flowtitle.gif) 0 0 no-repeat; text-align: center; color: #FF5757; }
+body#service #flow .set h3 span { display: block; width: 160px; line-height: 90px; text-align: center; }
+body#service #flow .set h3 span.break { position: absolute; top: 50%; left: 0; margin-top: -1em; line-height: 1.2;  }
+body#service #flow .set div.detail { float: right; width: 610px;  }
+body#service #flow .set div.detail p { font-size: 81%; line-height: 1.7; }
+body#service #flow .set div.detail p span.intro { font-weight:bold; }
+body#service #flow .set div.detail ul { font-size: 81%; line-height: 1.7; }
+body#service #flow .set div.detail ul li { padding: 0 0 0 1.2em; background: url(/service/img/icon_listhead.gif) 0 0.6em no-repeat; }
+
+body#service .button { margin: 40px 0 0; overflow: hidden; }
+body#service .button .link-left { float: left; }
+body#service .button .link-right { float: right; }
+
+
+/* ======================
+ クリーデンス会社概要
+========================= */
+/*タイトル*/
+body#company .company-title{ padding:17px 0; border-top:#CC9900 solid 3px; border-bottom:#CC9900 solid 1px;}
+body#company .company-title h1{ font-size:130%; font-weight:bold; color:#333;}
+/* body#company .company-title h1,  x:-moz-any-link  { font-weight:normal; } for FF */
+body#company .company-title h1.release{ font-size:130%; font-weight:bold; color:#333; line-height: 1.2em; text-align: center;}
+body#company .company-title h2{ font-size:120%; font-weight:bold; color:#333;}
+
+/*共通左ナビ*/
+body#company .side-navi{ width:173px; margin-bottom:20px; border:#CCC solid 1px; padding:10px 0 0 7px;}
+body#company .side-navi h2{ margin-bottom:10px; font-size:89%; background:url(/company/img/icon_rectangle.gif) no-repeat left top; padding-left:12px;}
+body#company .side-navi li{ padding:8px 0; margin-right:7px; font-size:84%; font-weight:bold; border-top:#CCC dotted 1px;}
+body#company .side-navi li img{ vertical-align:middle;}
+body#company .side-navi li a{ display:block; padding-left:10px; background:url(/common/img/arrow_brown.gif) no-repeat left 4px;}
+body#company .side-navi li.first{ border:none;}
+body#company .side-navi li:hover{ background-color:#FFF4D1;}
+body#company .side-navi li.now{ background-color:#FFF4D1;}
+body#company .side-navi li.now a{ text-decoration:none;}
+
+/*会社概要TOP*/
+body#company .company-point { margin: 0 0 27px; }
+body#company .top-useful .set a.title{ background:url(/company/img/bg_menu.jpg) no-repeat -1px top; }
+body#company .top-useful .set { width:790px;clear:both; }
+
+body#company #company-detail { margin: 25px 0 0; }
+
+body#company #company-detail .set { margin:0 0 15px 0;clear:both; }
+body#company #company-detail .right { margin:0 0 20px 20px;float:right;clear:both; }
+body#company #company-detail .left { margin:0 20px 20px 0;float:left;clear:both; }
+
+body#company #company-detail h2{ margin-bottom:30px; font-size:100%; background:url(/company/img/icon_rectangle.gif) no-repeat left top; padding-left:12px; padding-top:1px;}
+body#company #company-detail h3{ margin-bottom:0.5em; font-size:85%; font-weight:bold; background:url(/company/img/icon_cube.gif) no-repeat left 4px; padding-left:14px;}
+body#company #company-detail h4 { font-size:80%; line-height:1.6em; font-weight:bold; }
+body#company #company-detail p, body#company #company-detail ul { font-size:80%; margin-bottom:30px; line-height:1.6em; }
+body#company #company-detail p span { font-size: 60%; vertical-align: top; }
+
+body#company #company-detail h2#company-policy { margin:0;padding:0;text-indent:-9999px;width:247px;height:29px;background:url(/company/img/policy_01.gif) no-repeat; }
+
+body#company #company-detail .set .date { color: #666666; font-size: 75%; font-weight: bold; margin-bottom: 14px; text-align: right; }
+body#company #company-detail .box { border:#CC9900 solid 1px; padding:10px 8px; }
+body#company #company-detail .box h2 { margin-bottom:15px; font-size:100%; background:none; padding:0; }
+body#company #company-detail .box p { margin:0; }
+
+/* ======================
+ 採用をお考えのアパレル企業様へ
+========================= */
+/* タイトル */
+body#client .client-title{ padding:17px 0;border-top:#CC9900 solid 3px;border-bottom:#CC9900 solid 1px; }
+body#client .client-title h1{ font-size:130%;font-weight:bold;color:#333; }
+/* body#client .client-title h1,  x:-moz-any-link  { font-weight:normal; } for FF */
+body#client .client-title h2{ font-size:120%;font-weight:bold;color:#333; }
+
+/* 共通左ナビ */
+body#client .side-navi{ width:173px;margin-bottom:20px;border:#CCC solid 1px;padding:10px 0 0 7px; }
+body#client .side-navi h2{ margin-bottom:10px;font-size:89%;background:url(/company/img/icon_rectangle.gif) no-repeat left top;padding-left:12px; }
+body#client .side-navi li{ padding:8px 0;margin-right:7px;font-size:84%;font-weight:bold;border-top:#CCC dotted 1px; }
+body#client .side-navi li img{ vertical-align:middle; }
+body#client .side-navi li a{ display:block;padding-left:10px;background:url(/common/img/arrow_brown.gif) no-repeat left 4px; }
+body#client .side-navi li.first{ border:none; }
+body#client .side-navi li:hover{ background-color:#FFF4D1; }
+body#client .side-navi li.now{ background-color:#FFF4D1; }
+body#client .side-navi li.now a{ text-decoration:none; }
+
+/* 採用をお考えのアパレル企業様へTOP */
+body#client .client-point { margin:0; }
+body#client .top-useful .set a.title{ background:url(/company/img/bg_menu.jpg) no-repeat -1px top; }
+body#client .top-useful .set { width:790px;clear:both; }
+
+/* ディレクトリ内共通スタイル */
+body#client #client-default .right { margin:0 0 20px 20px;float:right;clear:both; }
+
+/* Point・Serviceアイコンつき箇条書き */
+body#client #client-default { padding:30px 0 0 0; } 
+body#client #client-default .set { margin:0 0 30px 0; }
+body#client #client-flowfigure,
+body#client #client-banner { padding:0 0 40px 0; }
+
+body#client #client-default #intro { margin:0 0 40px 0; }
+body#client #client-default h2,
+body#client #client-flowfigure h2 { margin:0 0 20px 0;padding:0 0 0 110px;line-height:50px;border-bottom:5px solid #FFF3CC;font-size:130%;clear:both; }
+
+body#client #client-default h2 span { display:none; }
+body#client #client-default #point1 h2 { background:url(/client/img/icon_point1.gif) 0 50% no-repeat; }
+body#client #client-default #point2 h2 { background:url(/client/img/icon_point2.gif) 0 50% no-repeat; }
+body#client #client-default #point3 h2 { background:url(/client/img/icon_point3.gif) 0 50% no-repeat; }
+body#client #client-default #point4 h2 { background:url(/client/img/icon_point4.gif) 0 50% no-repeat; }
+body#client #client-default #service1 h2 { background:url(/client/img/icon_service1.gif) 0 50% no-repeat; }
+body#client #client-default #service2 h2 { background:url(/client/img/icon_service2.gif) 0 50% no-repeat; }
+body#client #client-default #service3 h2 { background:url(/client/img/icon_service3.gif) 0 50% no-repeat; }
+body#client #client-default #service4 h2 { background:url(/client/img/icon_service4.gif) 0 50% no-repeat; }
+body#client #client-default #service4 h2 { background:url(/client/img/icon_service4.gif) 0 50% no-repeat; }
+body#client #client-flowfigure h2 { background:url(/client/img/icon_flow.gif) 0 50% no-repeat; }
+
+/* 人材紹介サービスの流れ */
+body#client #client-flowfigure { margin:30px 0 0; }
+body#client #client-flowfigure .set { padding: 20px 0;overflow: hidden;background: url(/service/img/line_flow.gif) 0 0 no-repeat; }
+body#client #client-flowfigure .set.first { background: none; }
+body#client #client-flowfigure .set h3 { position: relative;float: left;width: 160px;height: 90px;background: url(/service/img/bg_flowtitle.gif) 0 0 no-repeat;text-align: center;color: #CC9900; }
+body#client #client-flowfigure .set h3 span { display: block;width: 160px;line-height: 90px;text-align: center; }
+body#client #client-flowfigure .set h3 span.break { position: absolute;top: 50%;left: 0;margin-top: -1em;line-height: 1.2; }
+body#client #client-flowfigure .set div.detail { float: right;width: 610px; }
+body#client #client-flowfigure .set div.detail p { font-size: 81%;line-height: 1.7; }
+body#client #client-flowfigure .set div.detail p span.intro { font-weight:bold; }
+
+body#client #client-default h3{ margin-bottom:0.5em;font-size:85%;font-weight:bold;background:url(/client/img/icon_cube.gif) no-repeat left 4px;padding-left:14px;clear:both; }
+body#client #client-default p, body#client #client-default ul { margin:0 0 1em 0;font-size:81%;line-height:1.7; }
+body#client #client-default ul li { padding: 0 0 0 1.2em;background: url(/client/img/icon_listhead.gif) 2px 0.6em no-repeat; }
+
+/* ======================
+ メールマガジン登録
+========================= */
+body#mailmagazine #title { width:750px; margin:0 auto; }
+body#mailmagazine #title h1 { width:750px;height:319px;background:url(/img/mailmagazine_01.gif) no-repeat;text-indent:-9999px; }
+body#mailmagazine #intro { width:750px; margin:0 auto;}
+body#mailmagazine h2 { margin:0 0 10px 0;padding:0 0 0 10px;border-left:5px solid #7F4453;font-size:85%;line-height:1.7; }
+body#mailmagazine #intro p { margin:0 0 30px 0;font-size:81%;line-height:1.7; }
+body#mailmagazine #entry { width:750px; margin:0 auto; }
+body#mailmagazine #entry p { margin:0 0 30px 0;font-size:81%;line-height:1.7; }
+/*body#mailmagazine #entry .left { width:400px;float:left; }*/
+body#mailmagazine #entry table { width:750px;font-size:81%;line-height:1.7;border-top:1px solid #7F4453;border-left:1px solid #7F4453; }
+body#mailmagazine #entry table th { padding:10px 8px;background-color:#F2CED5;border-bottom:1px solid #7F4453;border-right:1px solid #7F4453; }
+body#mailmagazine #entry table th span.Notes { color:#CC0000;font-size:86%;font-weight:normal; }
+body#mailmagazine #entry table td { padding:10px 8px;border-bottom:1px solid #7F4453;border-right:1px solid #7F4453; }
+body#mailmagazine #entry textarea { width:698px;height:6.8em;font-size:81%;line-height:1.7; }
+/*body#mailmagazine #entry .right { width:320px;float:right; }
+body#mailmagazine #entry .right span { font-weight:bold; }
+body#mailmagazine #entry .right .set { margin:0;padding:10px 10px 48px 10px;border:1px solid #7F4453; }
+body#mailmagazine #entry .right .set p.last { margin-bottom:0; }
+body#mailmagazine #entry .right .set img { margin:15px;float:right; }*/
+body#mailmagazine #notes { padding:30px 0 0 0;width:750px;margin:0 auto;clear:both; } 
+body#mailmagazine #notes p { margin:0 0 30px 0;font-size:81%;line-height:1.7; } 
+
+/* ======================
+ 利用規約・プライバシーポリシー
+========================= */
+/*利用規約*/
+body#rule .rule-title{ padding:17px 0; border-top:#999999 solid 3px; border-bottom:#999999 solid 1px;}
+body#rule .rule-title h1{ font-size:130%; font-weight:bold; color:#333;}
+/* body#rule .company-title h1,  x:-moz-any-link  { font-weight:normal; } for FF */
+body#rule h2{ margin:30px 0; font-size:100%; background:url(/rule/img/icon_rectangle.gif) no-repeat left top; padding-left:12px; padding-top:1px;}
+body#rule h3{ font-size:81%; font-weight:bold; color:#333;margin:15px 0 5px 0;}
+
+body#rule #text{width:750px; margin:0 auto 50px;}
+body#rule p.intro{ margin:20px 0; }
+body#rule p.supplement{text-align: right;}
+body#rule p,body#rule ol li,body#rule ul li,body#rule table th,body#rule table td{font-size:81%; }
+body#rule ul.legal{font-size:120%;}
+body#rule ol li{list-style-type:decimal;margin-left:1.5em;}
+body#rule ul.legal li{list-style-type:none;margin-left:0;margin-bottom:0;}
+
+body#rule .contact {background:none repeat scroll 0 0 #F2F2F2;border:1px solid #CCCCCC;margin: 0 0 1em;padding:0 15px 15px 15px;margin:20px 0;}
+
+body#rule table{ width:750px; border-collapse:collapse;margin:0 0 15px 0;}
+body#rule table h4{background:none; padding:0; margin:0; width:auto; }
+body#rule table th{padding:5px 10px; vertical-align:top; background:#E0F6F6; text-align:left; font-weight:normal;border:#CCC solid 1px;}
+body#rule table .type{ width:370px;}
+body#rule table td{padding:11px 10px; vertical-align:top; border:#CCC solid 1px;}
+
+/*プライバシーポリシー*/
+body#privacy .rule-title{ padding:17px 0; border-top:#999999 solid 3px; border-bottom:#999999 solid 1px;}
+body#privacy .rule-title h1{ font-size:130%; font-weight:bold; color:#333;}
+/* body#rule .company-title h1,  x:-moz-any-link  { font-weight:normal; } for FF */
+body#privacy h2{ margin:30px 0; font-size:100%; background:url(/privacy/img/icon_rectangle.gif) no-repeat left top; padding-left:12px; padding-top:1px;}
+body#privacy h3{font-size:81%;font-weight:bold; color:#333;margin:15px 0 5px 0;}
+body#privacy h4{font-size:81%;font-weight:normal;margin-top:5px;}
+
+body#privacy #text{width:750px; margin:0 auto 50px;}
+body#privacy p.intro{ margin:20px 0; }
+body#privacy p.supplement{text-align:right;margin:30px 0;}
+body#privacy p,body#privacy ol li,body#privacy ul li,body#privacy table th,body#privacy table td{font-size:81%; }
+body#privacy ul.legal{font-size:120%;}
+body#privacy ol li{list-style-type:decimal;margin-left:1.5em;}
+body#privacy ul.legal li{list-style-type:none;margin-left:0;margin-bottom:0;}
+body#privacy ul.privacy li{list-style-type:disc;margin-left:1.1em;margin-bottom:0;}
+body#privacy a.pdf{ background:url(/common/img/pdf.gif) no-repeat left top; padding:2px 0 0 20px;}
+
+body#privacy .contact {background:none repeat scroll 0 0 #F2F2F2;border:1px solid #CCCCCC;margin: 0 0 1em;padding:0 15px 15px 15px;margin:20px 0;}
+
+/* ======================
+ サイトマップ
+========================= */
+body#sitemap #main{width:750px; margin:0 auto;}
+body#sitemap #crd{margin:0 0 120px;clear: both;}
+body#sitemap .site-title{ padding:17px 0; border-top:#999999 solid 3px; border-bottom:#999999 solid 1px;}
+body#sitemap .site-title h1{ font-size:130%; font-weight:bold; color:#333;}
+/* body#sitemap .site-title h1,  x:-moz-any-link  { font-weight:normal; } for FF */
+body#sitemap h2{ margin:30px 0; font-size:100%; background:url(/img/icon_rectangle.gif) no-repeat left top; padding-left:12px; padding-top:1px;clear: both;}
+
+body#sitemap .sitemap{border-top: 1px solid #CCCCCC;clear: both;padding:15px 0 0;width:750px;}
+body#sitemap h3{font-weight:bold;font-size:89%;margin: 0;padding: 0 0 15px;}
+body#sitemap h3 a{text-decoration:none;}
+
+body#sitemap .sitemap ul {color: #FF6600;float: left;list-style: none outside none;margin: 0;padding: 0 0 10px;}
+body#sitemap .sitemap ul li{float:left;margin: 0 0 5px;padding: 0 5px 0 0;width: 240px;font-size:81%;}
+
+
+body#sitemap .sitemap ul.medium {color: #FF6600;float: left;list-style: none outside none;margin: 0;padding: 0 0 10px;}
+body#sitemap .sitemap ul.medium li{float:left;margin: 0 0 5px;padding: 0 5px 0 0;width: 350px;font-size:81%;}
+
+/* ======================
+ 404エラー
+========================= */
+body#notfound #main{width:750px; margin:0 auto;}
+
+/* ======================
+ 問い合わせ
+========================= */
+body#contact .top-useful .set a.title{background:url(/contact/img/bg_menu.jpg) no-repeat -1px top;}
+
+body#contact h2{margin-bottom:30px; font-size:100%; background:url(/contact/img/icon_rectangle.gif) no-repeat left top; padding-left:12px; padding-top:1px;}
+
+body#contact #contact-detail {margin: 25px 0 0;}
+
+body#contact #contact-detail .set {margin:0 0 15px 0;clear:both;}
+body#contact #contact-detail .right {margin:0 0 20px 20px;float:right;clear:both;}
+body#contact #contact-detail .left {margin:0 20px 20px 0;float:left;clear:both;}
+
+body#contact .summary{font-size:81%; margin-bottom:25px;}
+
+
+/* ======================
+ フォーム
+========================= */
+#header-sp{ display:none;}
+#footer-sp{ display:none;}
+
+#form { width:750px; margin:0 auto;}
+.main-image-pc{ margin-bottom:20px;}
+.main-image-sp{ display:none;}
+
+#form .explanation{ border:#CCC dotted 1px; padding:15px 20px 15px 10px; margin-top:10px; margin-bottom:40px;}
+#form .explanation ul li { font-size: 70%; padding: 0 0 0 1.2em; background: url(/service/img/icon_listhead.gif) 0 0.6em no-repeat; }
+#form ul { margin: 0; }
+#form ul li { font-size: 75%; padding: 0 0 0 1.2em; background: url(/service/img/icon_listhead.gif) 0 0.6em no-repeat; }
+#form .profile ul { margin: 0 0 40px; }
+
+#form em { color:#CC3300; font-weight:normal;}
+
+#form #information { padding:1em;border:1px solid #39C; }
+#form #information h3 { font-size:100%; }
+
+#form .attention{ font-size:75%; margin:0 0 20px 0;}
+#form .arrow-orange{ background:url(/common/img/arrow_orange.gif) no-repeat left 2px; padding-left:12px;}
+#form .step{ margin:20px 0;}
+
+#form h2{ margin-bottom:20px; font-size:100%; color:#333; background:url(/search/img/icon_rectangle.gif) no-repeat left top; padding-left:14px; padding-top:1px;}
+#form h3{ font-size:75%; color:#333;}
+#form table{ margin-bottom:50px; width:750px; text-align:left; border-collapse:collapse; background:#FBF8EE;}
+#form table th, #form table td{ vertical-align:top; text-align:left; padding:10px 8px; font-size:81%; border-top:#CCC solid 1px;border-bottom:#CCC solid 1px;}
+#form table th{ background:url(/search/img/icon_cube.gif) no-repeat 8px 15px; padding-left:22px;}
+#form table th.menu{ font-weight:normal; background:none; padding-left:8px; border-left:#CCC solid 1px;}
+#form table td{ background:#FFF; width:424px; border-left:#CCC solid 1px;}
+
+
+#form img.required{ margin-left:8px;}
+#form img.required-bottom{ margin-top:3px;}
+
+#form .note{ color:#3399CC; font-size: 81%; margin-bottom:5px; line-height: 130%;}
+#form .comment{ color:#999; font-size: 75%; font-weight:normal;}
+#form input, #form textarea{
+	border:#CCC solid 1px;
+	vertical-align:middle\9;/*for IE9*/
+	}
+
+/* プロフィール */
+#form input.name{ margin:0 10px; width:127px; height:20px;}
+#form input.name2{ margin:0 10px; width:127px; height:20px;}
+#form input.gender1{ border:none;}
+#form input.gender2{ margin-left:24px; border:none;}
+#form select.birthday{ margin-left:10px;}
+#form  .profile .otherlink{ margin-left:5px;}
+#form input.mail{ width:336px; height:20px; margin-right:5px;}
+#form input.post{ width:73px; height:20px;}
+#form input.button-address{ border:none; vertical-align:middle; margin-left:14px;}
+#form input.address{ margin-top:8px; width:312px; height:20px;}
+#form optgroup{ font-style:normal;}
+#form input.building{ width:428px; height:20px;}
+#form input.telephone1{ height:20px; padding:0 3px;}
+#form input.telephone2{ height:20px; padding:0 3px;}
+#form input.telephone3{ height:20px; padding:0 3px; margin-right:5px;}
+#form input.no-telephone{ margin-left:10px; vertical-align:middle; border:none;}
+#form input.company{ width:336px; height:20px; margin-right:5px;}
+#form input.company2{ width:336px; height:20px; margin-right:5px;}
+#form input.section{ width:336px; height:20px; margin-right:5px;}
+#form input.url{ width:336px; height:20px; margin-right:5px;}
+#form input.job_type{ width:336px; height:20px; margin-right:5px;}
+#form input.job_place{ width:336px; height:20px; margin-right:5px;}
+#form input.number{ width:100px; height:20px; margin-right:5px;}
+
+/* 職歴,その他の職歴 */
+#form input.career1{ border:none;}
+#form input.career2{ margin-left:24px; border:none;}
+#form input.company{ width:334px; height:20px;}
+#form textarea.free{ margin-bottom:5px; width:420px; /*height:100px;*/}
+#form .career .example{ margin:5px 0;}
+#form .career .example a{ margin-right:15px;}
+#form .career .time, #form .other-career .time{ margin-bottom:8px;}
+#form .career .category, #form .other-career .category{ margin:5px 0; margin-left:10px;}
+
+
+/* 転職について */
+#form input.times{ width:60px; height:20px;}
+#form .job .category{ margin:5px 0; margin-left:10px;}
+#form input.positive1{ border:none;}
+#form input.positive2{ margin-left:24px; border:none;}
+#form input.job-number{ width:60px; height:20px; margin-bottom:5px;}
+#form input.has-job1{ border:none;}
+#form input.has-job2{ margin-left:24px; border:none;}
+
+
+/* きっかけ */
+#form .question .area{ border-top:#CCC solid 1px; border-bottom:#CCC solid 1px; margin-bottom:40px; letter-spacing:-.40em;}
+#form .question .block{ width:249px; margin:0; padding:0; display:inline-block; border-left:#CCC solid 1px; vertical-align:top; letter-spacing:normal;/display:inline;/zoom:1;}
+#form .question .first{ border-left:none;}
+#form .question .category{  margin:0; padding:14px 10px; background:#FBF8EE;}
+#form .question .category p{ background:url(/search/img/icon_cube.gif) no-repeat 8px 5px; padding-left:22px; font-size:81%; font-weight:bold;}
+#form .question .select{ margin:0; padding:14px 10px; font-size:81%;}
+#form .question input { margin-bottom:8px; border:none; vertical-align:middle;}
+
+/* 利用規約 */
+#form .agreement p{ margin-bottom:10px; font-size:89%;}
+#form .agreement .attention{ font-size:80%;}
+#form .agreement .orange{ color:#FF6600; font-weight:bold; font-size:81%;}
+#form .agreement .submit{ text-align:center; margin-top:20px; margin-bottom:40px;}
+#form .agreement .submit-sp{ display:none;}
+
+#form .agreement .text-sp{ display:none;}
+#form .agreement .text{ font-size:81%; width:748px; height:116px; border:#CCC solid 1px; background:#FBF8EE; color:#666; margin:20px 0; padding:14px 10px; overflow:auto;}
+#form .agreement .text p{ margin-bottom:10px;}
+
+#form p.submit input { border:none;}
+#form .agreement label{ font-size:81%;}
+
+/* エラー */
+#form .explanation-error{ margin-bottom:20px;}
+
+#form #error { margin:0px 10px 20px 10px; }
+#form #error p { color:#ff0000; font-weight:bold; font-size:89%;}
+#form #error ul li { color:#ff0000; padding:3px 0 0 15px; font-size:75%; text-indent:-1em;}
+#form #error ul li:before {content:"■ ";}
+
+#form td.error { background:#FDDEDC;}
+#form ul.errortext{ margin-bottom:5px;}
+#form ul.errortext li { color:#ff0000;}
+
+/* 確認画面 */
+#form .title{ font-size:120%; font-weight:bold; margin:20px 0; padding:15px 0; border-top:#6DBB34 solid 3px; border-bottom:#6DBB34 solid 1px;}
+#form .about{ background:#E4F7E1; padding:15px; margin-bottom:10px; font-size:89%; font-weight:bold;}
+#form .about span{ font-weight:normal;}
+#form .print{ font-size:75%; margin-bottom:20px;}
+#form .print .arrow-gray{ background:url(/common/img/arrow_gray.gif) no-repeat left 2px; padding-left:12px;}
+#form table.comfirm{ margin-bottom:20px;}
+#form .revision{ text-align:right; margin-top:20px; margin-bottom:30px;}
+#form .revision input{ border:none;}
+#form .question .answer{ padding:15px 20px; font-size:75%; border:#CCC solid 1px;}
+#form .agreement .agree{ margin-left:20px;}
+
+#form .comfirm-submit{ text-align:center; font-size:75%; margin:50px 0;}
+#form .comfirm-submit .submit-sp{ display:none;}
+#form .comfirm-submit .submit{ margin-top:20px;}
+
+/* 完了画面 */
+#form .mail-magazine .pr{ margin-top:40px; margin-bottom:10px; font-size:110%; font-weight:bold; color:#FE6200;}
+#form .mail-magazine .note{ font-size:89%; margin-bottom:20px; color:#333;}
+#form table.mail-magazine{ margin-bottom:20px;}
+#form .mail-magazine td.job label{ margin-right:10px;}
+#form .mail-magazine td.job input{ border:none;}
+#form .mail-magazine .text-sp{ display:none;}
+#form .mail-magazine .text{ width:400px; height:100px; color:#666; border:#CCC solid 1px; padding:5px 10px; overflow:auto;}
+
+#form .complete-submit{ text-align:center; margin:30px 0;}
+#form .complete-submit .submit-sp{ display:none;}
+#form .complete-submit .site-top { margin-top:30px; font-size:75%;}
+
+/*radio*/
+input.npt  {
+	float:left;
+	display:block;
+	clear:both;
+}
+div.radioLeft fieldset label{
+	float:left;
+}
