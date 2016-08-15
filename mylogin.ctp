@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  *
  * PHP 5
@@ -26,7 +26,7 @@ $url = "http://www.crede.co.jp";
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8; IE=EmulateIE9">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<?php echo $this->Html->charset(); ?>
-	<title>企業マイページ｜アパレル業界の求人、転職ならクリーデンス</title>
+	<title>ログイン画面</title>
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('common');
@@ -36,49 +36,41 @@ $url = "http://www.crede.co.jp";
 		echo $this->Html->script('check');
 		echo $this->Html->script('smartRollover');
 	?>
-	
 </head>
 
 <body id="mypage">
 
 <div id="wrap">
-	<div id= "wrapper">
+	<div id="wrapper">
 		
 		<div id="header">
-		
 			<div id="ci">
-				<p><a href="https://www.crede.co.jp/"><img src="/client/mypage/webroot/img/logo.gif" alt="CREDENCE" height="80" width="80"></a></p>
-                        	<p class="sitedescript"><br>ファッション・アパレル業界の求人、転職ならクリーデンス</p>
-									
-			</div>
+				<p><img src="/user/mypage/img/logo.gif" alt="CREDENCE" height="54" width="56"></p>
+				<p class="sitedescript">アパレル求人・転職ならクリーデンス。経験を生かした転職をサポートします。<br>大手・デザイナーズ・外資系企業の豊富な求人や、転職に役立つサービスが満載。</p>
+			</div><!-- /ci -->
 		</div><!-- /header -->
 
 
 		
 
-		
+
 		<div id="areaMypage">
-			<hr class="hrFooter">
-			<h1 class="hdg01"><img src="/client/mypage/webroot/img/human.png" height="40" width="30"> &nbsp;企業マイページ</h1>
-			<div class="bgimage">
+			<h1 class="hdg01">ログイン画面</h1>
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $content_for_layout; ?>
-			</div>
 		</div><!-- /areaMypage -->
-		
-			<div class="pagetop">
-			<a href="#"><img src="/client/mypage/webroot/img/pagetop.png" height="50" width="50"></a>
-			<hr class="hrFooter" size="1">
+
+			<div class="pagetop"><a href="http://www.crede.co.jp/rule/mypage.pdf" target="_brank">規約</a></div>
+
 		<div id="footer">
 			<div class="footerci">
-			
 				<ul>
-					<a href="http://www.crede.co.jp/rule/mypage.pdf" target="_blank">クリーデンスマイページに関する規約</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© Intelligence,Ltd. All Rights Reserved.<br>
-					<li class="copyright"></li>
+					<li class="copyright">Copyright （C） CREDENCE,Ltd. All Rights Reserved.</li>
 				</ul>
 			</div>
 		</div><!-- /footer -->
 	</div><!-- /wrapper -->
 </div><!-- /wrap -->
+
 </body>
 </html>
